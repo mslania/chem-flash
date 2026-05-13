@@ -1,12 +1,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Mixed Reception</title>
-<script language="javascript">AC_FL_RunContent = 0;</script>
-<script src="AC_RunActiveContent.js" language="javascript"></script>
+
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+</script>
+
+<script defer src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </head>
-<body bgcolor="#ffffff"><center>
+
+<body bgcolor="#ffffff">
+
+<center>
+
 <div id="flash-container"></div>
 
 <script>
@@ -21,9 +28,12 @@ window.addEventListener("load", () => {
     player.style.width = "700px";
     player.style.height = "575px";
 
-    player.load("https://mslania.github.io/chem-flash/main.swf");
+    player.load("./main.swf");
 
 });
-</script></center>
+</script>
+
+</center>
+
 </body>
 </html>
